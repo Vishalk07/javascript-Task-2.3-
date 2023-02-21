@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    background: rgb(60,179,173);
+    background: linear-gradient(90deg, rgba(60,179,173,0.9192051820728291) 0%, rgba(31,147,222,1) 50%, rgba(69,252,179,1) 100%);
+}
+input {
+  border-radius: 5px;
+}
+#btn {
+  margin: auto;
+}
+#main1 {
+  background-image: linear-gradient(to bottom, #70b2df, #be77bc, #a578ca, #75b3af, #acb868);
+  margin-top: 15px;
+  margin-inline: auto;
+  border-radius: 43px;
+  width: auto;
+  padding: 15px;
+}
+#tab2 {
+  margin-bottom: 10px;
+}
+
+#div1,
+#newtab {
+  background-color: rgba(255,255,255,0.4);;
+  border-radius: 24px;
+}
+#myInput {
+  margin: 20px;
+}
+i:hover {
+  color: #c99c7e;
+  cursor: pointer;
+}
+tr:hover {
+  background-color: #51acb3;
+}
+thead tr:hover{
+  background-color: #5567af;
+}
+#lastdiv{
+background-color: rgba(255,255,255,0.4);
+border-radius: 24px;}
+#divtab,#myInput,#divtab1,#lastdiv,#tab2{
+  display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  
+@media only screen and (max-width: 768px),
+  (min-device-width: 768px) and (max-device-width: 1200px) {
+    #maintable table, #maintable  thead, #maintable tbody, #maintable  th, #maintable td, #maintable tr {
+    display: block;
+    width: 100%;
+  }
+  h1
+  {
+    font-size: x-large;
+  }
+  .tdmark{
+  text-align: center !important;
+
+  }
+  #maintable thead {
+   display: none;
+}
+input{
+    width: 40%;
+}
+
+#maintable  tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  #maintable  tr,#maintable td,#maintable tbody{
+    text-align: right;
+  }
+
+  #maintable td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+
+  }
+  #maintable td:before {
+    content: attr(data-label);
+ position: absolute;
+ left: 0;
+ width: 50%;
+ text-align: left;
+ font-size: 14px;
+ font-weight: 600;
+ margin-left: 10px;
+  }
+  #save1{
+    display: flex;
+    justify-content: center;
+  }
+}

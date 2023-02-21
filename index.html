@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Vishal Task 2</title>
+    <!--  meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./bootstrap/bootstrap5.2.1.css">
+    <link rel="stylesheet" href="./css/task 2.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" type="image/x-icon" href="./images/icons8-done.gif">
+</head>
+<!-----------------------------------------------Body of html-------------------------------------------------------------->
+
+<body>
+    <div class="container" id="main1">
+        <header class="container text-center">
+            <h1>Task-2 Javascript</h1>
+        </header>
+        <div class="container" id="div1">
+            <div class="container text-left" id="save1"> <button class="bg-transparent border-0" id="btn"><img
+                        src="./images/icons8-plus-math-20.png" alt=""></button></div>
+            <div class="container">
+                <form action="#" onsubmit="return displaytable(event)" id="form1">
+                    <!-----------------------------------------------Table1-------------------------------------------------------------->
+
+                    <table id="maintable" class="table" name="form1">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Subject</th>
+                                <th>Marks</th>
+                                <th>Accept / Reject</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+                            <tr>
+                                <td data-label="No" class="col1">1</td>
+                                <td data-label="Name"><input  class="name" type="text" placeholder="name" 
+                                        name="" id="" >
+                                    </td>
+                                <td data-label="Subject" ><input  class="subject" type="text" placeholder="subject"
+                                         name="" id=""></td>
+                                <td data-label="Marks" ><input class="mark" type="number"  placeholder="marks" onkeydown="javascript :return event.keyCode==69 ? false:true"
+                                        /></td>
+                                <td class="tdmark"> <button class="btn btn-outline-primary" id="btn1"> Accept</button> <button
+                                        id="btn1.1" class="btn btn-outline-danger btn2">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col1" data-label="No">2</td>
+                                <td  data-label="Name"><input class="name" type="text" placeholder="name"  name=""
+                                        id="" ></td>
+                                <td   data-label="Subject"><input class="subject" type="text" placeholder="subject" 
+                                        name="" id="" ></td>
+                                <td  data-label="Marks" ><input class="mark" type="number"  placeholder="marks" onkeydown="javascript :return event.keyCode==69 ? false:true"
+                                        /></td>
+                                <td class="tdmark"> <button class="btn btn-outline-primary"> Accept</button> <button
+                                        class="btn btn-outline-danger">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col1" data-label="No"  >3</td>
+                                <td data-label="Name"  ><input class="name" type="text" placeholder="name"  name=""
+                                        id="" ></td>
+                                <td  data-label="Subject"  ><input class="subject" type="text" placeholder="subject"  name=""
+                                        id="" ></td>
+                                <td data-label="Marks"  ><input class="mark" type="number"  placeholder="marks" onkeydown="javascript :return event.keyCode==69 ? false:true" /></td>
+                                <td  class="tdmark"> <button class="btn btn-outline-primary"> Accept</button>
+                                    <button class="btn btn-outline-danger">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col1" data-label="No" >4</td>
+                                <td  data-label="Name" ><input class="name" type="text" placeholder="name"  name=""
+                                        id="" ></td>
+                                <td   data-label="Subject" ><input class="subject" type="text" placeholder="subject"  name=""
+                                        id="" ></td>
+                                <td  data-label="Marks" ><input class="mark" type="number"  placeholder="marks" onkeydown="javascript :return event.keyCode==69 ? false:true"
+                                        /></td>
+                                <td class="tdmark"> <button class="btn btn-outline-primary"> Accept</button> <button
+                                        class="btn btn-outline-danger">Reject</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col1" data-label="No">5</td>
+                                <td data-label="Name"><input class="name" type="text" placeholder="name"  name=""
+                                        id="" ></td>
+                                <td  data-label="Subject"><input class="subject" type="text" placeholder="subject" 
+                                        name="" id="" ></td>
+                                <td data-label="Marks" ><input class="mark" type="number" placeholder="marks" onkeydown="javascript :return event.keyCode==69 ? false:true"
+                                        /></td>
+                                <td class="tdmark" > <button class="btn btn-outline-primary"> Accept</button> <button
+                                        class="btn btn-outline-danger">Reject</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="container" id="save1"> <button type="submit"  class="btn btn-primary my-3">Save</button></div>
+        </div>
+        </form>
+        <div class="topnav d-flex justify-content-center ">
+            <input type="text" id="myInput"  class="form-control" onkeyup="Searching()" placeholder="Search By Name/Sub">
+        </div>
+        <div class="container text-center " id="divtab">
+            <h1><img src="./images/9gag.png"> --- Table Result --- </h1>
+        </div>
+
+        <div class="container mb-4 table-responsive" id="newtab">
+            <!-----------------------------------------------Table-------------------------------------------------------------->
+
+            <table id="tab2" class="table table-hover my-4 ">
+                <thead id="th1">
+                </thead>
+                <tbody id="tbody1"></tbody>
+            </table>
+        </div>
+        <div class="container text-center " id="divtab1">
+            <h1><img src="./images/9gag.png"> --Percentage Table--</h1>
+        </div>
+        <div class="container-fluid table-responsive" id="lastdiv">
+            <table id="tab3" class="table table-hover my-4">
+                <thead id="tab3head">
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody2"></tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="./js/task 2.js"></script>
+    <script src="./bootstrap/bootstrap.js"></script>
+</body>
+
+</html>
