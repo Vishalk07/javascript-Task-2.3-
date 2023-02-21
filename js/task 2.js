@@ -164,7 +164,7 @@ function validation() {
       ele.nextElementSibling?.remove();
       let errText = document.createElement("p");
       errText.style.color = "red";
-      errText.innerHTML = "Please Fill Valid Format ";
+      errText.innerHTML = "Please Fill Valid Format Text Only";
       ele.parentNode.appendChild(errText);
       val1 = false;
     } else {
